@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu site Responsivo</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          background: linear-gradient(315deg, #410500 0.000%, #6b0000 25.000%, #9d0000 50.000%, #cf1100 75.000%, #fa3200 100.000%);
+        }
+
+        header{
+            background-color: #8a4747;
+            color: white;
+            text-align: center;
+            padding: 5vh 5%;
+        }
+
+        nav{
+            background-color: #542727;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;            
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;     
+            background-color: rgb(205, 105, 105);
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        main{
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .destaque{
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cards{
+            display: flex;
+            gap: 30px;
+        }
+
+        .card1{
+            width: 33%;
+            min-height: 25vh;
+
+            background-color: rgb(180, 70, 70);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .card2{
+            width: 33%;
+            min-height: 25vh;
+
+            background-color: rgb(180, 70, 70);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .card3{
+            width: 33%;
+            min-height: 25vh;
+
+            background-color: rgb(180, 70, 70);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        footer{
+            background-color: #472222;
+            color: white;
+            text-align: center;
+            padding: 4vh 5%;
+            font-size: 25px;
+        }
+
+
+        /* celular */
+        @media (max-width: 600px){
+            nav{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cards{
+                flex-direction: column;
+            }
+
+            .card1{
+                width: 100%;
+            }
+            .card2{
+                width: 100%;
+            }
+            .card3{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Revolução dos bichos</h1>
+      <p>Resumo do livro de George orwell</p>
+    </header>
+
+    <nav>
+     
+      <a href="https://www.todamateria.com.br/a-revolucao-dos-bichos/">Saiba mais em toda materia</a>
+      <a href="https://www.mercadolivre.com.br/a-revolucao-dos-bichos-orwell-george-portugues-principis/up/MLBU3788613566?pdp_filters=item_id%3AMLB6240626696&from=gshop&matt_tool=65609379&m">aonde achar o livro</a>
+     
+    </nav>
+
+    <main>
+      <section class="destaque">
+        <h2>Revolução dos bichos</h2>
+
+        <p>resumo do livro</p>
+        
+      </section>
+
+      <section class="cards">
+        <div class="card1">
+          <img src="https://m.media-amazon.com/images/I/612QiXA+FyL._AC_UF1000,1000_QL80_.jpg" width="400" padding="400" alt="imagem do livro">
+        </div>
+
+        <div class="card2">
+          <h2>Resumo</h2>
+          
+          <p>O livro conta a historia de alguns animais que vivem em uma fazenda que um serto dia canssados de serem explorados pelos fasendeiro decidem fazer uma revolução e expulçando os humanos da fazenda e criando uma sociedade socialista que eles produsiam oque se utilisava </p>
+
+        </div>
+
+        <div class="card3">
+          <h2>personagens principais</h2>
+          <ul>Bola de Neve</ul>
+          <ul>Napoleão</ul>
+          <ul>Velho Major</ul>
+          <ul>Squealer</ul>
+          
+        </div>
+      </section>
+    </main>
+
+    <footer>caio Gabriel©-2026</footer>
+  </body>
+</html>
